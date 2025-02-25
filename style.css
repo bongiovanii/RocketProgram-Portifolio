@@ -1,0 +1,48 @@
+body{
+   color: white;
+   font-family: 'Montserrat', serif;
+   background-color: rgb(37, 37, 37)   ;
+}
+
+
+header img{
+   border-radius: 50px;
+   border: rgb(7, 138, 138) solid 5px;
+}
+.container{
+   padding: 0px 20px;
+}
+.image{
+   text-align:center;
+}
+
+.cabecalho{
+   text-align: center;
+}
+main{
+   text-align: center;
+}
+
+
+h1{
+   color: rgb(7, 138, 138);
+}
+a{
+   color: white;
+   text-decoration: none;
+}
+
+footer{
+   display: flex;
+   justify-content: center;
+   padding: 20px;
+}
+
+footer img{
+   width: 56px;
+   height: 56px;
+}
+
+footer a{
+   margin: 20px;
+}
