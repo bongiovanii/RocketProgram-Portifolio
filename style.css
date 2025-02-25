@@ -7,7 +7,7 @@ body{
 
 header img{
    border-radius: 50px;
-   border: rgb(7, 138, 138) solid 5px;
+   border: rgb(68, 0, 255) solid 5px;
 }
 .container{
    padding: 0px 20px;
@@ -16,16 +16,18 @@ header img{
    text-align:center;
 }
 
-.cabecalho{
+.title{
    text-align: center;
 }
 main{
-   text-align: center;
+   text-align: start;
 }
 
-
+ul{
+   list-style-type: none;
+}
 h1{
-   color: rgb(7, 138, 138);
+   color: rgb(68, 0, 255);
 }
 a{
    color: white;
