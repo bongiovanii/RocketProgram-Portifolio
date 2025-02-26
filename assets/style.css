@@ -1,7 +1,7 @@
 body{
    color: white;
    font-family: 'Montserrat', serif;
-   background-color: rgb(37, 37, 37)   ;
+   background-color: rgb(54, 54, 54)   ;
 }
 
 
@@ -9,9 +9,17 @@ header img{
    border-radius: 50px;
    border: rgb(68, 0, 255) solid 5px;
 }
+
+header{
+   margin-left: 400px;
+   margin-right: 400px;
+}
+
+
 .container{
    padding: 0px 20px;
 }
+
 .image{
    text-align:center;
 }
@@ -19,15 +27,19 @@ header img{
 .title{
    text-align: center;
 }
+
 main{
    text-align: start;
+   margin-left: 400px;
+   margin-right: 400px;
+
 }
 
 ul{
    list-style-type: none;
 }
 h1{
-   color: rgb(68, 0, 255);
+   color: rgb(87, 45, 204);
 }
 a{
    color: white;
