@@ -2,36 +2,27 @@ body{
    color: white;
    font-family: 'Montserrat', serif;
    background-color: rgb(54, 54, 54)   ;
+   background: linear-gradient(rgb(43, 42, 42) ,rgb(62, 53, 87));
 }
 
 
 header img{
-   border-radius: 50px;
-   border: rgb(68, 0, 255) solid 5px;
+   border-radius: 50%;
+   border: #75727e solid 5px;
 }
 
 header{
    margin-left: 400px;
    margin-right: 400px;
 }
-
-
-.container{
-   padding: 0px 20px;
-}
-
-.image{
-   text-align:center;
-}
-
-.title{
-   text-align: center;
-}
-
 main{
    text-align: start;
    margin-left: 400px;
    margin-right: 400px;
+   margin-top: 20px;
+   background-color: rgb(68, 68, 68);
+   padding: 2%;
+   border-radius: 50px;
 
 }
 
@@ -39,7 +30,7 @@ ul{
    list-style-type: none;
 }
 h1{
-   color: rgb(87, 45, 204);
+   color:#9a96a5;
 }
 a{
    color: white;
@@ -60,3 +51,22 @@ footer img{
 footer a{
    margin: 20px;
 }
+
+.cabecalho{
+   background-color: rgb(68, 68, 68);
+   padding: 2%;
+   border-radius: 50px;
+}
+
+.container{
+   padding: 0px 20px;
+}
+
+.image{
+   text-align:center;
+}
+
+.title{
+   text-align: center;
+}
+
