@@ -13,7 +13,6 @@ header img{
    width: 200px;
    border-radius: 50%;   
    box-shadow: 5px 10px 2px rgba(0, 0, 0, 0.459);
-
 }
 
 header h1{
@@ -52,6 +51,10 @@ header{
    padding-top: 17px;
 }
 
+.linkedin span:hover{
+   color: rgb(109, 141, 167);
+}
+
 .linkedin a{
    text-decoration: none;
    font-size: 20px ;
@@ -70,14 +73,18 @@ header{
    border-radius: 40px;
    box-shadow: 5px 10px 2px rgba(0, 0, 0, 0.459);
    position:relative;
-
 }
+
 .github span{
    position:absolute;
    left: 50%;
    transform: translateX(-50%);
    padding-top: 17px;
    text-align: center;
+}
+
+.github span:hover{
+   color: rgb(109, 141, 167);
 }
 
 .github a{
@@ -106,6 +113,10 @@ header{
    transform: translateX(-50%);
    text-align: center;
    padding: 17px;
+}
+
+.instagram span:hover{
+   color: rgb(109, 141, 167);
 }
 
 .instagram a{
