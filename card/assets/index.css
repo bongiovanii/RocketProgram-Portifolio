@@ -1,0 +1,89 @@
+html, body{
+   height: 100%;
+   width: 100%;
+}
+
+body{
+   font-family: 'Montserrat', sans-serif;
+   background: linear-gradient(rgb(175, 8, 175),rgb(9, 185, 185));
+   color: white;
+}
+
+header img{
+   width: 200px;
+   border-radius: 50%;   
+   box-shadow: 5px 10px 2px rgba(0, 0, 0, 0.459);
+
+}
+
+header h1{
+   font-size: 40px;
+}
+
+header p{
+   font-size: 20px;
+}
+
+header{
+   justify-items: center;
+   text-align: justify;
+}
+
+.linkedin{
+   display: flex;
+   justify-content: start;
+   background-color: white;
+   margin-right: 500px;
+   margin-left: 500px;
+   padding: 20px;
+   border-radius: 40px;
+   box-shadow: 5px 10px 2px rgba(0, 0, 0, 0.459);
+
+}
+
+.linkedin a{
+   text-decoration: none;
+   font-size: 20px ;
+   color: black;
+   font-weight: bold;
+}
+
+.github{
+   display: flex;
+   justify-content: start;
+   background-color: white;
+   margin-right: 500px;
+   margin-left: 500px;
+   margin-top: 20px;
+   padding: 20px;
+   border-radius: 40px;
+   box-shadow: 5px 10px 2px rgba(0, 0, 0, 0.459);
+
+}
+
+.github a{
+   text-decoration: none;
+   font-size: 20px ;
+   color: black;
+   font-weight: bold;
+}
+
+
+.instagram{
+   display: flex;
+   justify-content: start;
+   background-color: white;
+   margin-right: 500px;
+   margin-left: 500px;
+   margin-top: 20px;
+   padding: 20px;
+   border-radius: 40px;
+   box-shadow: 5px 10px 2px rgba(0, 0, 0, 0.459);
+}
+
+.instagram a{
+   text-decoration: none;
+   font-size: 20px ;
+   color: black;
+   font-weight: bold;
+}
