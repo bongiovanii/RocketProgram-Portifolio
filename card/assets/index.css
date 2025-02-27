@@ -5,7 +5,7 @@ html, body{
 
 body{
    font-family: 'Montserrat', sans-serif;
-   background: linear-gradient(rgb(175, 8, 175),rgb(9, 185, 185));
+   background: linear-gradient(rgb(57, 58, 58),rgb(175, 187, 187));
    color: white;
 }
 
@@ -31,14 +31,25 @@ header{
 
 .linkedin{
    display: flex;
-   justify-content: start;
+   align-items: center;
+   justify-content: flex-start;
    background-color: white;
    margin-right: 500px;
    margin-left: 500px;
    padding: 20px;
    border-radius: 40px;
    box-shadow: 5px 10px 2px rgba(0, 0, 0, 0.459);
+   position: relative;
 
+
+}
+
+.linkedin span{
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   text-align: center;
+   padding-top: 17px;
 }
 
 .linkedin a{
@@ -50,7 +61,7 @@ header{
 
 .github{
    display: flex;
-   justify-content: start;
+   justify-content: flex-start;
    background-color: white;
    margin-right: 500px;
    margin-left: 500px;
@@ -58,7 +69,15 @@ header{
    padding: 20px;
    border-radius: 40px;
    box-shadow: 5px 10px 2px rgba(0, 0, 0, 0.459);
+   position:relative;
 
+}
+.github span{
+   position:absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   padding-top: 17px;
+   text-align: center;
 }
 
 .github a{
@@ -71,7 +90,7 @@ header{
 
 .instagram{
    display: flex;
-   justify-content: start;
+   justify-content: flex-start;
    background-color: white;
    margin-right: 500px;
    margin-left: 500px;
@@ -79,6 +98,14 @@ header{
    padding: 20px;
    border-radius: 40px;
    box-shadow: 5px 10px 2px rgba(0, 0, 0, 0.459);
+}
+
+.instagram span{
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   text-align: center;
+   padding: 17px;
 }
 
 .instagram a{
