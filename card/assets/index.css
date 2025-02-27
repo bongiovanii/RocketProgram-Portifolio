@@ -13,6 +13,7 @@ header img{
    width: 200px;
    border-radius: 50%;   
    box-shadow: 5px 10px 2px rgba(0, 0, 0, 0.459);
+   margin-top: 50px;
 }
 
 header h1{
