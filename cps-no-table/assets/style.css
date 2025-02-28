@@ -58,19 +58,12 @@ main{
 
 }
 
-main img{
-   
-}
-
 #text1{
    display: flex;
    margin-right: 470px;
    margin-left: 470px;
    justify-content: center;
 }
-
-
-
 
 #text2{
    display: flex;
