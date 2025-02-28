@@ -1,0 +1,121 @@
+body{
+   font-family: 'Montserrat', sans-serif;
+   background-color: rgb(80, 80, 80);
+   color: white;
+}
+
+.title{
+   justify-items: center;
+   background-color: red;
+   margin-top: 0;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   padding: 10px;
+   font-size: 20px;
+}
+
+
+
+nav{
+   margin-top: 120px;
+   background-color: rgb(47, 51, 54);
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+
+}
+
+ul{
+   display: flex;
+   justify-content: space-between;
+   list-style-type: none;
+   align-items: center;
+   margin-left: 10px;
+   margin-right: 20px;
+   padding: 5px;
+   font-size: 20px;
+   font-weight: bold;
+}
+
+header a{
+   text-decoration: none;
+   color: white;
+   
+}
+
+header a:hover{
+   color: rgb(0, 162, 255);
+}
+
+
+
+main{
+   margin-top: 240px;
+   text-align: justify;
+
+}
+
+main img{
+   
+}
+
+#text1{
+   display: flex;
+   margin-right: 470px;
+   margin-left: 470px;
+   justify-content: center;
+}
+
+
+
+
+#text2{
+   display: flex;
+   margin-right: 470px;
+   margin-left: 470px;
+   justify-content: center;
+}
+
+
+#text3{
+   display: flex;
+   margin-right: 470px;
+   margin-left: 470px;
+   justify-content: center;
+}
+
+main p{
+   display: flex;
+   margin-right: 470px;
+   margin-left: 470px;
+   justify-content: center;
+}
+.cps{
+   display: flex;
+   margin: 0 auto;
+   justify-items: center;
+   text-align: center;
+}
+.fatec{
+   display: flex;
+   margin: 0 auto;
+}
+
+.bibli{
+   display: flex;
+   margin: 0 auto;
+   width: 750px;
+}
+
+.banner{
+   width: 600px;
+   display: flex;
+   margin: 0 auto;
+}
+
+footer{
+   background-color: white;
+}
