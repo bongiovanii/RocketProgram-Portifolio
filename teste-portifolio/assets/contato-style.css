@@ -64,24 +64,61 @@ button:hover{
 }
 
 
-#perfil{
-   border-radius: 20%;
-   box-shadow: 10px 10px 10px rgb(151, 26, 135);
-   margin-bottom: 30px;
+.contatos{
+   display: inline-block;
+   background-color: rgb(49, 49, 49);
+   text-align: center;
+   justify-content: space-between;
+  
+   width: 300px;
+   height: 300px;
+   margin: auto;
+   margin-left: 50px;
+
+   border-radius: 60px;
+
 }
 
-.sobremim p{
-   font-size: small;
-   text-align: justify;
+.contatos:hover{
+   background-color: blueviolet;
+   cursor:pointer;
 }
 
-.pc-image{
-   width: 500px;
+.contatos img{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-150%,-50%);
+}
+.telefone{
+   color: rgb(255, 255, 255);
+  
+   background-color: rgb(49, 49, 49);
+  
+  
+   width: 1000px;
+   height: 100px;
+   margin: auto;
+   padding-top:  50px;
+
+   border-radius: 60px;
+
    position: absolute;
-   top: 50%;
-   left: 70%;
+   top: 80%;
+   left: 51%;
    transform: translate(-50%,-50%);
-   
+
+   text-align: center;
+}
+
+main{
+   padding-top: 150px;
+   padding-left: 300px;
 }
 
 
+
+
+main img{
+   width: 100px;
+}
