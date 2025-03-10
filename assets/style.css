@@ -1,72 +1,87 @@
-body{
-   color: white;
-   font-family: 'Montserrat', serif;
-   background-color: rgb(54, 54, 54)   ;
-   background: linear-gradient(rgb(43, 42, 42) ,rgb(62, 53, 87));
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
+body{
+   font-family: 'Open Sans', sans-serif;
+   color: white;
+   background-color: rgb(15, 16, 28);
+   width: 100vw;
+   height: 100vh;
+}
 
-header img{
-   border-radius: 50%;
-   border: #75727e solid 5px;
+main{
+   padding-top: 60px;
+   margin-left: 30px;
 }
 
 header{
-   margin-left: 400px;
-   margin-right: 400px;
-}
-main{
-   text-align: start;
-   margin-left: 400px;
-   margin-right: 400px;
-   margin-top: 20px;
-   background-color: rgb(68, 68, 68);
-   padding: 2%;
-   border-radius: 50px;
-
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px 15px;
+   background-color: rgb(37, 37, 37);
 }
 
-ul{
+header img{
+   border-radius: 9px;
+   width: 50px ;
+   margin-left:30px;
+}
+
+li, a, button{
+   font-size: 16px;
+   text-decoration: none;
+   color: white;
+   font-weight: bold;
+}
+
+.nav-links{
    list-style-type: none;
 }
-h1{
-   color:#9a96a5;
-}
-a{
-   color: white;
-   text-decoration: none;
+
+.nav-links li{
+   display: inline-block;
+   padding: 0px 20px ;
 }
 
-footer{
-   display: flex;
-   justify-content: center;
-   padding: 20px;
+.nav-links li a:hover{
+   color: blueviolet;
 }
 
-footer img{
-   width: 56px;
-   height: 56px;
+button{
+   padding: 10px 20px;
+   border: none;
+   border-radius: 60px;
+   background-color: blueviolet;
+   cursor: pointer;
 }
 
-footer a{
-   margin: 20px;
+button:hover{
+   background-color: rgb(159, 77, 236);
 }
 
-.cabecalho{
-   background-color: rgb(68, 68, 68);
-   padding: 2%;
-   border-radius: 50px;
+
+#perfil{
+   border-radius: 20%;
+   box-shadow: 10px 20px 20px blueviolet;
+   margin-bottom: 30px;
 }
 
-.container{
-   padding: 0px 20px;
+.sobremim p{
+   font-size: small;
+   text-align: justify;
 }
 
-.image{
-   text-align:center;
+.pc-image{
+   width: 500px;
+   position: absolute;
+   top: 50%;
+   left: 70%;
+   transform: translate(-50%,-50%);
+   
 }
 
-.title{
-   text-align: center;
-}
 

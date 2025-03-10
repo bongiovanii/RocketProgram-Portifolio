@@ -66,7 +66,7 @@ button:hover{
 
 .contatos{
    display: inline-block;
-   background-color: rgb(49, 49, 49);
+   background-color: rgb(49, 49, 63);
    text-align: center;
    justify-content: space-between;
   
@@ -76,6 +76,8 @@ button:hover{
    margin-left: 50px;
 
    border-radius: 60px;
+
+   box-shadow: 10px 20px 20px blueviolet;
 
 }
 
@@ -90,16 +92,17 @@ button:hover{
   left: 50%;
   transform: translate(-150%,-50%);
 }
+
 .telefone{
    color: rgb(255, 255, 255);
   
-   background-color: rgb(49, 49, 49);
+   background-color: rgb(49, 49, 63);
   
   
    width: 1000px;
    height: 100px;
    margin: auto;
-   padding-top:  50px;
+   padding-top:  30px;
 
    border-radius: 60px;
 
@@ -109,7 +112,10 @@ button:hover{
    transform: translate(-50%,-50%);
 
    text-align: center;
+   box-shadow: 10px 20px 20px blueviolet;
 }
+
+
 
 main{
    padding-top: 150px;

@@ -10,6 +10,7 @@ body{
    background-color: rgb(15, 16, 28);
    width: 100vw;
    height: 100vh;
+
 }
 
 main{
@@ -63,25 +64,41 @@ button:hover{
    background-color: rgb(159, 77, 236);
 }
 
-
-#perfil{
-   border-radius: 20%;
-   box-shadow: 10px 10px 10px rgb(151, 26, 135);
-   margin-bottom: 30px;
-}
-
-.sobremim p{
-   font-size: small;
-   text-align: justify;
-}
-
-.pc-image{
-   width: 500px;
-   position: absolute;
-   top: 50%;
-   left: 70%;
-   transform: translate(-50%,-50%);
+.hability-card{
+   background-color: rgb(49, 49, 63);
+   display: inline-block;
    
+   width: 300px;
+   height: 400px;
+
+   border-radius: 50px;
+   margin-left: 50px;
+
+   box-shadow: 10px 20px 20px blueviolet;
+
+  
+}
+
+.hability-card:hover{
+   background-color: blueviolet;
+}
+
+main img{
+   position: relative;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
 }
 
 
+
+
+main{
+   display: flex;
+   
+   justify-content: center;
+   align-items: center;
+   margin-top: 50px;
+   
+
+}
