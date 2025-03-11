@@ -67,9 +67,9 @@ button:hover {
 .contatos {
   background-color: rgb(49, 49, 63);
   text-align: center;
-  width: 300px;
-  height: 300px;
-  border-radius: 60px;
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
   box-shadow: 10px 20px 20px blueviolet;
 
   transition: all 0.3s;
@@ -82,41 +82,17 @@ button:hover {
 }
 
 .contatos img {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-150%, -50%);
+
+  transform: scale(0.7);
 }
 
-.telefone {
-  color: rgb(255, 255, 255);
-
-  background-color: rgb(49, 49, 63);
-
-  width: 1000px;
-  height: 100px;
-  margin: auto;
-  padding-top: 30px;
-
-  border-radius: 60px;
-
-  position: absolute;
-  top: 80%;
-  left: 51%;
-  transform: translate(-50%, -50%);
-
-  text-align: center;
-  box-shadow: 10px 20px 20px blueviolet;
-}
-
-main {
+footer{
+   position: absolute;
    display: flex;
-   justify-content: space-between;
-   padding: 100px;
- }
-
-main img {
-  width: 100px;
+   top: 91%;
+   left: 70%;
+   transform: translate(-50%,-50%);
+   
 }
 
 .form h2 {
@@ -125,23 +101,15 @@ main img {
 }
 
 form {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   background-color: rgb(49, 49, 63);
   padding: 5%;
   border-radius: 50px;
   box-shadow: 10px 20px 20px blueviolet;
-}
 
-.form {
   position: absolute;
-  top: 130%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100rem;
-  height: 100px;
+  top: 45%;
+  left: 70%;
+  transform: translate(-50%,-50%);
 }
 
 span {
@@ -151,4 +119,15 @@ span {
 .input{
    padding: 10px;
    border-radius: 10px;
+}
+
+.image img{
+   width: 600px;
+}
+
+.image{
+   position: absolute;
+   top: 50%;
+   left: 30%;
+   transform: translate(-50%,-50%);
 }

@@ -80,10 +80,9 @@ button:hover{
    transition: all 0.3s;
 }
 
-.projetos a{
+a{
    padding: 30px 0;
    font-size: 20px;
-   
 }
 
 .projetos:hover{
