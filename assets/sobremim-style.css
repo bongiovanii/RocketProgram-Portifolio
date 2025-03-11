@@ -10,7 +10,7 @@ body{
    background-color: rgb(15, 16, 28);
    width: 100vw;
    height: 100vh;
-
+   
 }
 
 main{
@@ -66,42 +66,30 @@ button:hover{
    background-color: rgb(159, 77, 236);
 }
 
-.hability-card{
-   background-color: rgb(49, 49, 63);
-   display: inline-block;
-   
-   width: 300px;
-   height: 400px;
-
-   border-radius: 50px;
-   margin-left: 50px;
-
-   box-shadow: 10px 20px 20px blueviolet;
-
-   transition: all 0.3s;
-}
-
-.hability-card:hover{
-   transform: scale(1.2);
-   background-color: blueviolet;
-}
-
-main img{
-   position: relative;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%,-50%);
-}
-
-
-
-
 main{
    display: flex;
-   
-   justify-content: center;
-   align-items: center;
-   margin-top: 50px;
-   
+  margin: 0;
+  padding-left: 100px;
+  padding-right: 100px;
+}
 
+.text{
+   font-size: 20px;
+   text-align: justify;
+   background-color: rgb(49, 49, 63);
+   padding: 30px;
+   border-radius: 50px;
+   box-shadow: 0 0 50px blueviolet;
+}
+
+.image img{
+   width: 500px;
+   border-radius: 60px;
+   box-shadow: 0 0 50px blueviolet;
+}
+
+.image{
+   position: relative;
+   left: 2%;
+   top: 42%;
 }
