@@ -1,135 +1,162 @@
-*{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-   font-family: 'Open Sans', sans-serif;
-   color: white;
-   background-color: rgb(15, 16, 28);
-   width: 100vw;
-   height: 100vh;
+body {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  background-color: rgb(15, 16, 28);
+  width: 100vw;
+  height: 100vh;
 }
 
-main{
-   padding-top: 60px;
-   margin-left: 30px;
+main {
+  display: flex;
+  justify-content: space-between;
+
+  /* position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   margin-left: 0; */
 }
 
-header{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 10px 15px;
-   background-color: rgb(37, 37, 37);
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: rgb(37, 37, 37);
 }
 
-header img{
-   border-radius: 9px;
-   width: 50px ;
-   margin-left:30px;
+header img {
+  border-radius: 9px;
+  width: 50px;
+  margin-left: 30px;
 }
 
-li, a, button{
-   font-size: 16px;
-   text-decoration: none;
-   color: white;
-   font-weight: bold;
+li,
+a,
+button {
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 
-.nav-links{
-   list-style-type: none;
+.nav-links {
+  list-style-type: none;
 }
 
-.nav-links li{
-   display: inline-block;
-   padding: 0px 20px ;
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
 }
 
-.nav-links li a:hover{
-   color: blueviolet;
+.nav-links li a:hover {
+  color: blueviolet;
 }
 
-button{
-   padding: 10px 20px;
-   border: none;
-   border-radius: 60px;
-   background-color: blueviolet;
-   cursor: pointer;
-   transition: all 0.3s;
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 60px;
+  background-color: blueviolet;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
-button:hover{
-   transform: scale(1.1);
-   background-color: rgb(159, 77, 236);
+button:hover {
+  transform: scale(1.1);
+  background-color: rgb(159, 77, 236);
 }
 
+.contatos {
+  background-color: rgb(49, 49, 63);
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 60px;
+  box-shadow: 10px 20px 20px blueviolet;
 
-.contatos{
-   display: inline-block;
-   background-color: rgb(49, 49, 63);
-   text-align: center;
-   justify-content: space-between;
-  
-   width: 300px;
-   height: 300px;
-   margin: auto;
-   margin-left: 50px;
-
-   border-radius: 60px;
-
-   box-shadow: 10px 20px 20px blueviolet;
-
-   transition: all 0.3s;
-
+  transition: all 0.3s;
 }
 
-.contatos:hover{
-   transform: scale(1.2);
-   background-color: blueviolet;
-   cursor:pointer;
+.contatos:hover {
+  transform: scale(1.2);
+  background-color: blueviolet;
+  cursor: pointer;
 }
 
-.contatos img{
+.contatos img {
   position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(-150%,-50%);
+  transform: translate(-150%, -50%);
 }
 
-.telefone{
-   color: rgb(255, 255, 255);
-  
-   background-color: rgb(49, 49, 63);
-  
-  
-   width: 1000px;
-   height: 100px;
-   margin: auto;
-   padding-top:  30px;
+.telefone {
+  color: rgb(255, 255, 255);
 
-   border-radius: 60px;
+  background-color: rgb(49, 49, 63);
 
-   position: absolute;
-   top: 80%;
-   left: 51%;
-   transform: translate(-50%,-50%);
+  width: 1000px;
+  height: 100px;
+  margin: auto;
+  padding-top: 30px;
 
-   text-align: center;
-   box-shadow: 10px 20px 20px blueviolet;
+  border-radius: 60px;
+
+  position: absolute;
+  top: 80%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+  box-shadow: 10px 20px 20px blueviolet;
 }
 
-
-
-main{
-   padding-top: 150px;
-   padding-left: 300px;
+main {
+  padding-top: 150px;
+  padding-left: 300px;
 }
 
+main img {
+  width: 100px;
+}
 
+.form h2 {
+  display: flex;
+  font-size: 30px;
+}
 
+form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(49, 49, 63);
+  padding: 5%;
+  border-radius: 50px;
+  box-shadow: 10px 20px 20px blueviolet;
+}
 
-main img{
-   width: 100px;
+.form {
+  position: absolute;
+  top: 130%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100rem;
+  height: 100px;
+}
+
+span {
+  font-size: 30px;
+}
+
+.input{
+   padding: 10px;
+   border-radius: 10px;
 }
