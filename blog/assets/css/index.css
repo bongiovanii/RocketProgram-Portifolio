@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  height: 100vh;
+  background-color: rgb(53, 53, 58);
+}
+
+.header {
+  background-color: rgb(34, 34, 71);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+aside li {
+  list-style-type: none;
+  display: inline-block;
+  justify-content: space-between;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+aside nav {
+  width: 100%;
+  padding: 10px;
+  height: 80px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+a:hover {
+  color: rgb(96, 96, 151);
+}
+
+@media (max-width: 999px) {
+  aside,
+  header p {
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  .burguer-btn {
+    display: none;
+  }
+
+  .dropdown-menu {
+    display: none;
+  }
+}
+
+.burguer-btn {
+  transform: scale(0.4);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.burguer-btn:hover {
+  transform: scale(0.5);
+}
+
+.image{
+   width: 700px;
+}
+
+
+main p{
+
+   display: flex;
+   justify-content: end;
+   text-align: justify;
+
+   font-size: 18px;
+
+}
+
+section{
+   position: absolute;
+   left: 50%;
+   right: 5%;
+   top: 15%;
+   background-color: white;
+   padding: 20px;
+   border-radius: 20px ;
+   box-shadow: 10px 10px 50px rgb(59, 112, 182);
+   transition: 0.3s;
+}
+
+section:hover{
+   transform: scale(1.1);
+}
