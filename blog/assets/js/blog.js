@@ -1,5 +1,5 @@
-const menuEl =  document.getElementById( "dropdown-menu ");
-const menuButtonEl = document.getElementsByClassName("p.burguer-btn ");
+const menuEl =  document.getElementById( "dropdown-menu");
+const menuButtonEl = document.querySelector(".burguer-btn");
 
 
 console.log(menuEl);

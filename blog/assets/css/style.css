@@ -45,13 +45,6 @@ a:hover {
   color: rgb(96, 96, 151);
 }
 
-@media (max-width: 999px) {
-  aside,
-  header p {
-    display: none;
-  }
-}
-
 button {
   background-color: rgb(34, 34, 71);
   border: none;
@@ -152,12 +145,20 @@ figure img {
   border-radius: 10px;
 }
 
+@media (max-width: 999px) {
+   aside,
+   header p {
+     display: none;
+   }
+ }
+ 
+
 @media (min-width: 1000px) {
   .burguer-btn {
     display: none;
   }
 
-  .dropdown-menu {
+  #dropdown-menu {
     display: none;
   }
 
