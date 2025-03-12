@@ -45,22 +45,7 @@ a:hover {
   color: rgb(96, 96, 151);
 }
 
-@media (max-width: 999px) {
-  aside,
-  header p {
-    display: none;
-  }
-}
 
-@media (min-width: 1000px) {
-  .burguer-btn {
-    display: none;
-  }
-
-  .dropdown-menu {
-    display: none;
-  }
-}
 
 .burguer-btn {
   transform: scale(0.4);
@@ -95,10 +80,43 @@ section{
    background-color: white;
    padding: 20px;
    border-radius: 20px ;
-   box-shadow: 10px 10px 50px rgb(59, 112, 182);
-   transition: 0.3s;
+   box-shadow: 0 40px 100px rgb(59, 112, 182);
 }
 
-section:hover{
-   transform: scale(1.1);
+h2{
+   text-align: center;
 }
+
+@media (max-width: 999px) {
+   aside,
+   header p {
+     display: none;
+   }
+ 
+   .image{
+    width: 100%;
+   }
+
+   section{
+      position: absolute;
+      top: 140%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      
+      width: 100%;
+      
+      
+   }
+ 
+ }
+
+
+@media (min-width: 1000px) {
+   .burguer-btn {
+     display: none;
+   }
+ 
+   .dropdown-menu {
+     display: none;
+   }
+ }
