@@ -73,9 +73,8 @@ button:hover {
 }
 
 form button {
-  position: relative;
-  left: 50%;
-  transform: translate(-50%, -50%);
+display: flex;
+margin: 0 auto;
 }
 
 .contatos {
@@ -169,6 +168,7 @@ span {
   margin-top: 10px;
 }
 
+
 @media (min-width: 1000px) {
   .form {
     position: absolute;
@@ -180,7 +180,7 @@ span {
   }
 }
 
-@media (min-width: 900) {
+@media (max-width: 900px) {
   .form {
     position: absolute;
     z-index: 10;
@@ -193,7 +193,43 @@ span {
   .image {
     display: none;
   }
-  img {
-    display: none;
+
+  .form button{
+    transition: 0;
+    transform: scale(1);
+    display: flex;
+    justify-content: center;
+  
+
   }
+  
+  .form{
+    transform: scale(0.6);
+  }
+
+  .contatos{
+    transform: scale(0.8);
+  }
+  main{
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+  }
+
+  nav{
+    transform: scale(0.7);
+    display: flex;
+    flex-direction: row;
+  }
+
+   a button{
+    transform: scale(0.8);
+  }
+
+  footer{
+    top: 70%;
+    left: 50%;
+  }
+  
 }
