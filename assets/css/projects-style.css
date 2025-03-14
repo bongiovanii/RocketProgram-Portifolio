@@ -95,3 +95,43 @@ main h1{
 }
 
 
+@media (max-width: 585px){
+  header nav{
+     transform: scale(0.8);
+  
+  }
+
+  li{
+     padding: 0;
+     margin: 0;
+  }
+
+  .pc-image{
+   display: none;
+  }
+
+  .foto-perfil{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 0 auto;
+  }
+  h1{
+    font-size: 25px;
+    margin-bottom: 50px;
+  }
+
+  main{
+     padding: 10px;
+     margin: 0;
+  }
+
+  .projetos{
+    position: relative;
+    top:50%;
+    left: 38%;
+    transform: scale(0.8) translate(-50%, -50%);
+  }
+
+}
+

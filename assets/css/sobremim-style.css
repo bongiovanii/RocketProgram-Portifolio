@@ -68,30 +68,21 @@ button:hover{
 
 main{
    display: flex;
-  margin: 0;
-  padding-left: 100px;
-  padding-right: 100px;
+   margin: 0;
+   padding-left: 100px;
+   padding-right: 100px;
+   padding-top: 0;
 }
 
 .text{
-   font-size: 20px;
+   font-size: 16px;
    text-align: justify;
    background-color: rgb(49, 49, 63);
    padding: 30px;
    border-radius: 50px;
    box-shadow: 0 0 50px blueviolet;
-}
 
-.image img{
-   width: 500px;
-   border-radius: 60px;
-   box-shadow: 0 0 50px blueviolet;
-}
-
-.image{
-   position: relative;
-   left: 2%;
-   top: 42%;
+   transform: scale(0.9);
 }
 
 .rocket{
@@ -99,4 +90,27 @@ main{
    top:20%;
    left: 50%;
    transform: translate(-50%,-50%);
+}
+
+@media (min-width:1200){
+   header nav {
+      transform: scale(0.8);
+      width: 100%;
+    }
+
+    main{
+       margin:0;
+       padding: 0;
+    }
+  
+   .text{
+      width: 100%;
+   }
+ 
+   .rocket{
+      position: relative;
+      top:0%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+   }
 }

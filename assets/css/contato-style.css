@@ -72,9 +72,15 @@ button:hover {
   background-color: rgb(159, 77, 236);
 }
 
+form button {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .contatos {
   background-color: rgb(49, 49, 63);
-  text-align: center;
+
   width: 100rem;
   height: 100rem;
   border-radius: 20rem;
@@ -88,6 +94,13 @@ button:hover {
   margin: 0;
 }
 
+.contatos:nth-child(3) img {
+  position: relative;
+  left: 28%;
+  top: 30%;
+  transform: scale(0.6) translate(-50%, -50%);
+}
+
 .contatos:hover {
   transform: scale(1.2);
   background-color: blueviolet;
@@ -95,25 +108,30 @@ button:hover {
 }
 
 .contatos img {
-  transform: scale(0.7);
+  position: relative;
+  left: 33%;
+  top: 31%;
+  transform: scale(0.7) translate(-50%, -50%);
 }
 
 footer {
   position: absolute;
   display: flex;
-  top: 91%;
-  left: 70%;
+  top: 85%;
+  left: 78%;
   transform: translate(-50%, -50%);
 }
 
 .form h2 {
   display: flex;
   font-size: 30rem;
+  text-align: center;
+  justify-content: center;
 }
 
 form {
   background-color: rgb(49, 49, 63);
-  padding: 5%;
+  padding: 20px;
   border-radius: 50rem;
   box-shadow: 10rem 20rem 20rem blueviolet;
 
@@ -124,25 +142,15 @@ form {
   transform: translate(-50%, -50%);
 }
 
-@media (max-width: 1000px) {
-  .form {
-    position: absolute;
-    z-index: 10;
-    top: 45%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-    width: 40vw;
-  }
-}
-
 span {
   font-size: 30rem;
 }
 
 .input {
-  padding: 10rem;
+  padding: 15rem;
   border-radius: 10rem;
   width: 500rem;
+  margin-bottom: 5px;
 }
 
 .image img {
@@ -159,4 +167,33 @@ span {
 
 .submit {
   margin-top: 10px;
+}
+
+@media (min-width: 1000px) {
+  .form {
+    position: absolute;
+    z-index: 10;
+    top: 45%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    width: 40vw;
+  }
+}
+
+@media (min-width: 900) {
+  .form {
+    position: absolute;
+    z-index: 10;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40vw;
+  }
+
+  .image {
+    display: none;
+  }
+  img {
+    display: none;
+  }
 }

@@ -1,107 +1,138 @@
-*{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-   font-family: 'Open Sans', sans-serif;
-   color: white;
-   background-color: rgb(15, 16, 28);
-   width: 100vw;
-   height: 100vh;
-
+body {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  background-color: rgb(15, 16, 28);
+  width: 100vw;
+  height: 100vh;
 }
 
-main{
-   padding-top: 60px;
-   margin-left: 30px;
+main {
+  padding-top: 60px;
+  margin-left: 30px;
 }
 
-header{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 10px 15px;
-   background-color: rgb(37, 37, 37);
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: rgb(37, 37, 37);
 }
 
-header img{
-   border-radius: 9px;
-   width: 50px ;
-   margin-left:30px;
+header img {
+  border-radius: 9px;
+  width: 50px;
+  margin-left: 30px;
 }
 
-li, a, button{
-   font-size: 16px;
-   text-decoration: none;
-   color: white;
-   font-weight: bold;
+li,
+a,
+button {
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 
-.nav-links{
-   list-style-type: none;
+.nav-links {
+  list-style-type: none;
 }
 
-.nav-links li{
-   display: inline-block;
-   padding: 0px 20px ;
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
 }
 
-.nav-links li a:hover{
-   color: blueviolet;
+.nav-links li a:hover {
+  color: blueviolet;
 }
 
-button{
-   padding: 10px 20px;
-   border: none;
-   border-radius: 60px;
-   background-color: blueviolet;
-   cursor: pointer;
-   transition: all 0.3s;
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 60px;
+  background-color: blueviolet;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
-button:hover{
-   transform: scale(1.1);
-   background-color: rgb(159, 77, 236);
+button:hover {
+  transform: scale(1.1);
+  background-color: rgb(159, 77, 236);
 }
 
-.hability-card{
-   background-color: rgb(49, 49, 63);
-   display: inline-block;
-   
-   width: 300px;
-   height: 400px;
+.hability-card {
+  background-color: rgb(49, 49, 63);
+  display: inline-block;
 
-   border-radius: 50px;
-   margin-left: 50px;
+  width: 300px;
+  height: 400px;
 
-   box-shadow: 10px 20px 20px blueviolet;
+  border-radius: 50px;
 
-   transition: all 0.3s;
+  transform: scale(0.8);
+
+  box-shadow: 10px 20px 20px blueviolet;
+
+  transition: all 0.3s;
 }
 
-.hability-card:hover{
-   transform: scale(1.2);
-   background-color: blueviolet;
+.hability-card:hover {
+  transform: scale(1.2);
+  background-color: blueviolet;
 }
 
-main img{
-   position: relative;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%,-50%);
+main img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
+main {
+  display: flex;
 
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
 
+@media (max-width: 585px) {
+  /* body{
+      width: 100vw;
+   } */
+  header nav {
+    transform: scale(0.8);
+    width: 100%;
+  }
 
-main{
-   display: flex;
-   
-   justify-content: center;
-   align-items: center;
-   margin-top: 50px;
-   
+  h1 {
+    font-size: 25px;
+    margin-bottom: 50px;
+  }
 
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    padding: 0;
+    width: 100%;
+  }
+
+  .hability-card {
+    transform: scale(0.7);
+  }
+
+  .hability-card:hover {
+    transform: scale(0.8);
+    background-color: blueviolet;
+  }
 }

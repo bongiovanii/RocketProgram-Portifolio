@@ -65,12 +65,12 @@ button:hover{
    background-color: rgb(159, 77, 236);
 }
 
-
-#perfil{
-   border-radius: 20%;
-   box-shadow: 10px 20px 20px blueviolet;
-   margin-bottom: 30px;
+p{
+   margin-right: 50%;
 }
+
+
+
 
 .sobremim p{
    font-size: small;
@@ -80,10 +80,55 @@ button:hover{
 .pc-image{
    width: 600px;
    position: absolute;
-   top: 50%;
+   top: 51%;
    left: 75%;
-   transform: translate(-50%,-50%);
+   transform: translate(-50%,-50%) scale(0.9);
    
+}
+
+#perfil{
+   border-radius: 20%;
+   box-shadow: 10px 20px 20px blueviolet;
+   margin-bottom: 30px;
+   width: 300px;
+   
+}
+
+
+@media (max-width: 1200px){
+   header nav{
+      transform: scale(0.8);
+   
+   }
+
+   li{
+      padding: 0;
+      margin: 0;
+   }
+
+   .pc-image{
+    display: none;
+   }
+
+   .foto-perfil{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      width: 50px;
+   }
+
+   main{
+      padding: 10px;
+      margin: 0;
+   }
+
+   p{
+      margin-top: 5px;
+      font-size: 20px;
+      margin-right: 0;
+   }
+
 }
 
 
