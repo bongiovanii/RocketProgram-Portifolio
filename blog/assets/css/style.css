@@ -7,7 +7,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   height: 100vh;
-  background-color: rgb(53, 53, 58);
+  background-color: rgb(255,255,255);
 }
 
 .header {
@@ -36,7 +36,7 @@ aside nav {
 a {
   text-decoration: none;
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   transition: all 0.3s;
 }
@@ -115,15 +115,24 @@ button {
 }
 
 .post {
-  background-color: white;
+ 
   padding: 20px;
   margin-bottom: 50px;
   display: flex;
   text-align: justify;
   margin: 20px;
+
   border-radius: 20px;
-  background-color: white;
-  transition: all 0.5s;
+  border:2px solid rgb(151, 151, 151);
+  background-color: rgba(255, 255, 255, 0.2);
+
+  box-shadow: 0 0 30px rgb(66, 64, 64);
+
+  backdrop-filter: blur(0.5rem);
+  -webkit-backdrop-filter: blur(0.5rem);
+  transition: 0.5s;
+
+  transform: scale(0.9);
 }
 
 .post:hover {
@@ -133,16 +142,17 @@ button {
 section {
   padding: 40px;
 }
-li {
-  margin-left: 80px;
-}
-ul {
-  margin-left: 85px;
-}
 
 figure img {
   width: 100%;
   border-radius: 10px;
+}
+li{
+  margin-left: 20px;
+}
+
+ul{
+  margin-left: 30px;
 }
 
 @media (max-width: 999px) {
@@ -164,23 +174,23 @@ figure img {
 
   figure img {
     width: 800px;
-    position: relative;
-    left: 25%;
+   display: flex;
+   margin: 0 auto;
+
   }
 }
 .codigo {
-  background-color: rgb(233, 210, 191);
+  background-color: rgb(168, 167, 166);
   padding: 5px;
   border-radius: 10px;
 }
 
 footer {
-  background-color: white;
-  height: 50px;
+  height: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 14px;
 }
 
 span {
