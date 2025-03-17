@@ -1,129 +1,85 @@
-html, body{
-   height: 100%;
-   width: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-   font-family: 'Montserrat', sans-serif;
-   background: linear-gradient(rgb(57, 58, 58),rgb(175, 187, 187));
-   color: white;
-   height: 100vh;
+body {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(rgb(57, 58, 58), rgb(175, 187, 187));
+  background-repeat: no-repeat;
+  color: white;
 }
 
-header img{
-   width: 200px;
-   border-radius: 50%;   
-   box-shadow: 5px 10px 2px rgba(0, 0, 0, 0.459);
-   margin-top: 50px;
+header img {
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: 5px 10px 2px rgba(0, 0, 0, 0.459);
+  margin-top: 50px;
 }
 
-header h1{
-   font-size: 40px;
+header h1 {
+  font-size: 40px;
 }
 
-header p{
-   font-size: 20px;
+header p {
+  font-size: 20px;
 }
 
-header{
-   justify-items: center;
-   text-align: justify;
+header {
+  justify-items: center;
+  text-align: justify;
 }
-
-.linkedin{
-   display: flex;
-   align-items: center;
-   justify-content: flex-start;
-   background-color: white;
-   margin-right: 500px;
-   margin-left: 500px;
-   padding: 20px;
-   border-radius: 40px;
-   box-shadow: 5px 10px 2px rgba(0, 0, 0, 0.459);
-   position: relative;
-
-
-}
-
-.linkedin span{
-   position: absolute;
-   left: 50%;
-   transform: translateX(-50%);
-   text-align: center;
-   padding-top: 17px;
-}
-
-.linkedin span:hover{
-   color: rgb(109, 141, 167);
-}
-
-.linkedin a{
-   text-decoration: none;
-   font-size: 20px ;
-   color: black;
-   font-weight: bold;
-}
-
-.github{
-   display: flex;
-   justify-content: flex-start;
-   background-color: white;
-   margin-right: 500px;
-   margin-left: 500px;
-   margin-top: 20px;
-   padding: 20px;
-   border-radius: 40px;
-   box-shadow: 5px 10px 2px rgba(0, 0, 0, 0.459);
-   position:relative;
-}
-
-.github span{
-   position:absolute;
-   left: 50%;
-   transform: translateX(-50%);
-   padding-top: 17px;
+p{
    text-align: center;
 }
-
-.github span:hover{
-   color: rgb(109, 141, 167);
+main {
+  height: 100vh;
+  margin: 0;
 }
 
-.github a{
-   text-decoration: none;
-   font-size: 20px ;
-   color: black;
-   font-weight: bold;
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: white;
+
+  width: 500px;
+  padding: 20px;
+
+  border-radius: 40px;
+  box-shadow: 5px 10px 2px rgba(0, 0, 0, 0.459);
+  margin: 30px auto;
 }
 
-
-.instagram{
-   display: flex;
-   justify-content: flex-start;
-   background-color: white;
-   margin-right: 500px;
-   margin-left: 500px;
-   margin-top: 20px;
-   padding: 20px;
-   border-radius: 40px;
-   box-shadow: 5px 10px 2px rgba(0, 0, 0, 0.459);
+.links span {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding-top: 17px;
+  transition: 0.3s;
 }
 
-.instagram span{
-   position: absolute;
-   left: 50%;
-   transform: translateX(-50%);
-   text-align: center;
-   padding: 17px;
+.links:hover {
+  color: rgb(109, 141, 167);
 }
 
-.instagram span:hover{
-   color: rgb(109, 141, 167);
+.links a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
 }
 
-.instagram a{
-   text-decoration: none;
-   font-size: 20px ;
-   color: black;
-   font-weight: bold;
+@media (max-width: 500px) {
+  .container {
+    transform: scale(0.9);
+  }
+
+  .links {
+    width: 400px;
+    margin: 30px auto;
+  }
 }
