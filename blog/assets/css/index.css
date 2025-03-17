@@ -17,6 +17,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  width: 100%;
+  position: fixed;
 }
 
 aside li {
@@ -45,8 +47,6 @@ a:hover {
   color: rgb(96, 96, 151);
 }
 
-
-
 .burguer-btn {
   transform: scale(0.4);
   cursor: pointer;
@@ -62,41 +62,34 @@ button {
   border: none;
 }
 
-.image{
-   width: 700px;
-   transform: scale(0.7);
-  
+.image {
+  width: 700px;
+  transform: scale(0.7);
 }
 
+main p {
+  display: flex;
+  justify-content: end;
+  text-align: justify;
 
-main p{
-
-   display: flex;
-   justify-content: end;
-   text-align: justify;
-
-   font-size: 16px;
-
+  font-size: 16px;
 }
 
-section{
-   position: absolute;
-   left: 50%;
-   right: 5%;
-   top: 15%;
-   background-color: white;
-   padding: 20px;
-   border-radius: 20px ;
-   box-shadow: 0 40px 100px rgb(59, 112, 182);
-   transform: scale(0.8);
-  
+section {
+  position: absolute;
+  left: 50%;
+  right: 5%;
+  top: 15%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 40px 100px rgb(59, 112, 182);
+  transform: scale(0.8);
 }
 
-h2{
-   text-align: center;
+h2 {
+  text-align: center;
 }
-
-
 
 #dropdown-menu {
   width: 100%;
@@ -113,14 +106,13 @@ h2{
   left: 0;
 }
 
-#dropdown-menu.active{
-   display: flex;
+#dropdown-menu.active {
+  display: flex;
 }
 
 #dropdown-menu nav {
   width: 100%;
   height: 100%;
-  
 }
 
 #dropdown-menu li {
@@ -153,36 +145,36 @@ h2{
 }
 
 @media (max-width: 999px) {
-   aside,
-   header p {
-     display: none;
-   }
- 
-   .image{
+  aside,
+  header p {
+    display: none;
+  }
+
+  .image {
     width: 100%;
-   }
+  }
 
-   section{
-      position: absolute;
-      top: 150%;
-      left: 50%;
-      transform: translate(-50%,-50%) scale(0.9);
-      
-      width: 100%;
-  
-   }
- 
- }
+  .animated {
+    margin-top: 100px;
+  }
 
+  section {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+
+    width: 100%;
+    z-index: 1;
+  }
+}
 
 @media (min-width: 1000px) {
-   .burguer-btn {
-     display: none;
-   }
- 
-   .dropdown-menu {
-     display: none;
-   }
+  .burguer-btn {
+    display: none;
+  }
 
- 
- }
+  .dropdown-menu {
+    display: none;
+  }
+}
