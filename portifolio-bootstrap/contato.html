@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body class="">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <img
+              src="./assets/image/icons8-terminal-96.png"
+              alt="Logo"
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top"
+            />
+            GuDev
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./projetos.html">Projetos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Habilidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre Mim</a>
+              </li>
+            </ul>
+          </div>
+
+          <form class="d-flex" role="search">
+            <a href="./contato.html" class="btn btn-outline-primary">Contato</a>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <main class="w-100 m-auto form-container">
+      <section class="formulario">
+        <form>
+          <h1 class="h3">Contato</h1>
+          <div class="form-floating pb-3">
+            <input
+              type="tex"
+              class="form-control"
+              id="floatingInput"
+              placeholder="seu nome"
+            />
+            <label for="floatingInput"> Nome</label>
+          </div>
+          <div class="form-floating pb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="floatingInput"
+              placeholder="email@example.com"
+            />
+            <label for="floatingInput"> Email</label>
+          </div>
+          <div class="form-floating pb-3">
+            <input
+              type="tel"
+              class="form-control"
+              id="floatingInput"
+              placeholder="telefone"
+            />
+            <label for="floatingInput"> Telefone</label>
+          </div>
+          <div class="pb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Motivo do Contato</label
+            >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            ></textarea>
+          </div>
+          <button type="button" class="btn btn-primary w-100">Enviar</button>
+
+          <div class="text-center pt-2">
+            <a href="https://github.com/bongiovanii"><img src="./assets/image/icons8-github.svg" width="70px" alt="" /></a>
+            <a href="https://www.linkedin.com/in/gustavo-santos-bongiovani-de-oliveira/"
+              ><img src="./assets/image/icons8-linkedin.svg" width="70px" alt=""
+            /></a>
+          </div>
+        
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
