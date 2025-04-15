@@ -11,3 +11,20 @@ html,body{
 .formulario{
     margin-top: 80px;
 }
+
+
+.carrosel{
+    transform: scale(0.6);
+    
+}
+
+.sobremim{
+    margin-top: 40px;
+    transform: scale(0.7);
+    transition: 1s;
+}
+
+.sobremim:hover{
+    transform: scale(1.1);
+}
+
