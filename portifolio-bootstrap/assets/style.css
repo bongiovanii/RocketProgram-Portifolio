@@ -27,4 +27,12 @@ html,body{
 .sobremim:hover{
     transform: scale(1.1);
 }
+.card{
+    transition: 1s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
 
