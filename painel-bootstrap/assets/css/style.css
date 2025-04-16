@@ -1,0 +1,14 @@
+.cards-headers{
+    transform: scale(0.9);
+    
+}
+
+.inbox{
+    transform: scale(0.9);
+    margin-right: 50px;
+}
+
+img{
+    width: 30px;
+    
+}
