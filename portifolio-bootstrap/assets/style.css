@@ -35,4 +35,10 @@ html,body{
     transform: scale(1.1);
 }
 
+.terminal{
+    transition: 100ms;
+}
 
+.terminal:hover{
+    transform: scale(1.05)  rotate(-20deg);
+}
