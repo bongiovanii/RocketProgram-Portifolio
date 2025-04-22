@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sistema Escolar</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <main class="d-flex justify-content-center m-auto pt-5">
+      <form>
+        <h1 class="h2">Cadastrar Novo Usuário</h1>
+        <select
+          class="form-select"
+          id="conta"
+          aria-label="Default select example"
+          onchange="mostrarCampos()"
+        >
+          <option selected>Selecione o tipo de conta</option>
+          <option value="1">Professor</option>
+          <option value="2">Aluno</option>
+        </select>
+
+        <!-- Campo de nome -->
+        <div class="mb-3" id="campoNome" style="display: block">
+          <label for="materia" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="name" />
+        </div>
+
+        <!-- Campo de email -->
+        <div class="mb-3" id="campoEmail" style="display: block">
+          <label for="exampleInputEmail1" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            aria-describedby="emailHelp"
+          />
+          <div id="emailHelp" class="form-text">Coloque seu melhor email</div>
+        </div>
+
+        <!-- Campo de senha -->
+        <div class="mb-3" id="campoSenha" style="display: block">
+          <label for="exampleInputPassword1" class="form-label">Senha</label>
+          <input
+            type="password"
+            class="form-control"
+            id="senha"
+          />
+        </div>
+
+        <!-- Campo de Matéria (oculto inicialmente) -->
+        <div class="mb-3" id="campoMateria" style="display: none">
+          <label for="materia" class="form-label">Matéria</label>
+          <input type="text" class="form-control" id="materia" />
+        </div>
+
+        <!-- Campo de Turma (oculto inicialmente) -->
+        <div class="mb-3" id="campoTurma" style="display: none">
+          <label for="turma" class="form-label">Turma</label>
+          <input type="text" class="form-control" id="turma" />
+        </div>
+
+        <!-- Botão de cadastro -->
+        <button  onclick="cadastrar()"  id="btnCadastrar" type="button" class="btn btn-primary">
+          Cadastrar
+        </button>
+        <!-- Botão de login -->
+        <button id="btnLogin" type="submit" class="btn btn-primary ms-5">
+            <a href="./login.html" style="text-decoration: none; color: white;">Login</a>
+          </button>
+      </form>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+   
+  <script src="./assets/js/User.js"></script>
+  <script src="./assets/js/Aluno.js"></script>
+  <script src="./assets/js/Professor.js"></script>
+  <script src="./assets/js/app.js"></script>
+  </body>
+</html>
