@@ -5,8 +5,6 @@ window.onload = () => {
   if (contaSelect) {
     contaSelect.addEventListener("change", mostrarCampos);
   }
-
-
 };
 
 function mostrarCampos() {
@@ -24,9 +22,6 @@ function mostrarCampos() {
   }
 }
 
-// document.getElementById("btnCadastrar").addEventListener("click", cadastrar);
-
-// const login = document.getElementById("btnCheck").addEventListener("click", logar);
 
 function cadastrar() {
   const tipoConta = document.getElementById("conta").value;
@@ -68,14 +63,13 @@ function cadastrar() {
 }
 
 function logar() {
-  //não funciona, a verificação de senha e email está errada
+ 
   const userString = localStorage.getItem("users");
   const user = JSON.parse(userString);
 
   const email = document.getElementById("checkEmail").value;
   const senha = document.getElementById("checkSenha").value;
-  console.log(email,senha);
-
+  console.log(email, senha);
 
   let autenticado = false;
   for (let i = 0; i < user.length; i++) {
