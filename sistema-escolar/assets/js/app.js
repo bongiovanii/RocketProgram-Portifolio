@@ -7,7 +7,8 @@ window.onload = () => {
   }
 };
 
-function mostrarCampos() {
+function mostrarCampos() 
+{
   const tipoConta = document.getElementById("conta").value;
 
   document.getElementById("campoMateria").style.display = "none";
@@ -23,46 +24,39 @@ function mostrarCampos() {
 }
 
 
-function cadastrar() {
+function cadastrar() 
+{
   const tipoConta = document.getElementById("conta").value;
-  if (tipoConta == 1) {
+  if (tipoConta == 1) 
+  {
+    // <---- Cadastrar Professor ---->
     const professor = new Professor();
-
-    const nome = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("senha").value;
-    const materia = document.getElementById("materia").value;
-
-    professor.name = nome;
-    professor.email = email;
-    professor.password = password;
-    professor.materias = materia;
+    professor = setProfessor(professor);
 
     user.push(professor);
     console.log(user);
-    localStorage.setItem("users", JSON.stringify(user));
+    setLocalStorage(user);
+    
     alert(`Usuário ${professor.name} cadastrado`);
-  } else if (tipoConta == 2) {
+  } 
+  else if (tipoConta == 2) 
+  {
+    // <---- Cadastrar Aluno ---->
     const aluno = new Aluno();
 
-    const nome = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("senha").value;
-    const turma = document.getElementById("turma").value;
+    aluno = setAluno(aluno);
 
-    aluno.name = nome;
-    aluno.email = email;
-    aluno.password = password;
-    aluno.turma = turma;
+    
 
     user.push(aluno);
     console.log(user);
-    localStorage.setItem("users", JSON.stringify(user));
+    setLocalStorage(user);
     alert(`Usuário ${aluno.name} cadastrado`);
   }
 }
 
-function logar() {
+function logar() 
+{
  
   const userString = localStorage.getItem("users");
   const user = JSON.parse(userString);
@@ -72,9 +66,11 @@ function logar() {
   console.log(email, senha);
 
   let autenticado = false;
-  for (let i = 0; i < user.length; i++) {
+  for (let i = 0; i < user.length; i++) 
+  {
     console.log(user[i]._email, user[i]._password);
-    if (email === user[i]._email && senha === user[i]._password) {
+    if (email === user[i]._email && senha === user[i]._password) 
+    {
       autenticado = true;
       break;
     }
@@ -85,4 +81,39 @@ function logar() {
   }
 
   console.log(user, autenticado);
+}
+
+
+function setProfessor(professor)
+{
+  const nome = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("senha").value;
+  const materia = document.getElementById("materia").value;
+
+  professor.name = nome;
+  professor.email = email;
+  professor.password = password;
+  professor.materias = materia;
+
+  return professor;
+}
+
+function setAluno(aluno)
+{
+  const nome = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("senha").value;
+  const turma = document.getElementById("turma").value;
+
+  aluno.name = nome;
+  aluno.email = email;
+  aluno.password = password;
+  aluno.turma = turma;
+  return aluno
+}
+
+function setLocalStorage(user)
+{
+  localStorage.setItem("users", JSON.stringify(user));
 }
