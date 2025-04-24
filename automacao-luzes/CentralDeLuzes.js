@@ -16,11 +16,13 @@ class CentralDeLuzes {
 
     ligar(comodo) {
         this.luz = true;
+        alert(`Luz do comodo ${comodo} ligada`);
         console.log(`Luz do comodo ${comodo} ligada`);
     }
 
     desligar(comodo) {
         this.luz = false;
+        alert(`Luz do comodo ${comodo} desligada`);
         console.log(`Luz do comodo ${comodo} desligada`);
     }
 }
@@ -40,6 +42,7 @@ function ligarDesligarLuzes(id) {
     const luz = new CentralDeLuzes();
 
     const status = luz.getLuz();
+
     status === false ? luz.ligar(comodo) : luz.desligar(comodo);
 
 }
