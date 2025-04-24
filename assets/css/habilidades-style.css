@@ -71,8 +71,8 @@ button:hover {
   background-color: rgb(49, 49, 63);
   display: inline-block;
 
-  width: 300px;
-  height: 400px;
+  width: 250px;
+  height: 300px;
 
   border-radius: 50px;
 
@@ -84,7 +84,7 @@ button:hover {
 }
 
 .hability-card:hover {
-  transform: scale(1.2);
+  transform: scale(1.02);
   background-color: blueviolet;
 }
 
