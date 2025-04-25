@@ -21,7 +21,7 @@ class CentralDeLuzes {
     }
 
     desligar(comodo) {
-        this.luz = false;
+        this.luz = !this.luz;
         alert(`Luz do comodo ${comodo} desligada`);
         console.log(`Luz do comodo ${comodo} desligada`);
     }
