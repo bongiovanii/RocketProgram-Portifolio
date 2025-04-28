@@ -12,6 +12,23 @@
 </head>
 
 <body ng-controller="AppController">
+    <header>
+        <nav class="d-flex justify-content-center align-items-center m-auto bg-dark-subtle p-1">
+            <div class="container-fluid">
+                <h1>Filtrar por</h1>
+            </div>
+            <div class="filtros container-fluid text-end">
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="checkbox" class="btn-check" id="btnradio1" ng-model="filtros.aluno">
+                    <label class="btn btn-outline-primary" for="btnradio1">Aluno</label>
+
+                    <input type="checkbox" class="btn-check" id="btnradio2" ng-model="filtros.professor">
+                    <label class="btn btn-outline-primary" for="btnradio2">Professor</label>
+                </div>
+            </div>
+        </nav>
+    </header>
+
 
     <main ng-view class="container">
         <div class="row text-center">
@@ -20,13 +37,23 @@
             </div>
 
             <div class="col">
-                <h1>{{user.tipo}} {{user.nome}}</h1>
-                <div ng-if="user.tipo === 'Aluno'">
-                    <img src="./assets/images/aluno.png" class="w-50">
+                <div ng-repeat="user in usuarios| filter:filtroPorTipo">
+
+                    <p><br> {{user.tipo}} {{user.nome}} <br> Data de Cadastro: {{user.dataCadastro}}</p>
+
+                    <div ng-if="user.tipo === 'Aluno'">
+                        <img src="./assets/images/aluno.png" class="w-25">
+                    </div>
+                    <div ng-if="user.tipo === 'Professor'">
+                        <img src="./assets/images/professor.png" class="w-25" alt="">
+                    </div>
+
                 </div>
-                <div ng-if="user.tipo === 'Professor'">
-                    <img src="./assets/images/professor.png" class="w-75" alt="">
-                </div>
+            </div>
+
+            <div class="row p-5">
+                <p>Quantidade de Alunos: {{(usuarios | filter:{tipo:'Aluno'}).length}}</p>
+                <p>Quantidade de Professor: {{(usuarios | filter:{tipo:'Professor'}).length}}</p>
             </div>
         </div>
 
