@@ -36,17 +36,19 @@
             </button>
         </section>
         <section class="filters">
-            <label class="checkbox"><input type="checkbox" /> <span></span>Completas</label>
-            <label class="checkbox"><input type="checkbox" /> <span></span>Incompletas</label>
-            <label class="checkbox"><input type="checkbox" /> <span></span>Hoje</label>
+            <label class="checkbox"><input type="checkbox" ng-model="showCompletedOnly" />
+                <span></span>Completas</label>
+            <label class="checkbox"><input type="checkbox" ng-model="showIncompletedOnly" />
+                <span></span>Incompletas</label>
+            <label class="checkbox"><input type="checkbox" ng-model="showTodayOnly" /> <span></span>Hoje</label>
         </section>
     </header>
 
     <main class="content">
 
-        <article ng-repeat="task in tasks track by task.id" class="task">
+        <article ng-repeat="task in filteredTasks() | orderBy: 'checked'" class="task">
             <label class="checkbox">
-                <input type="checkbox" ng-model="task.checked" nd-change="toggleChecked(task)" />
+                <input type="checkbox" ng-model="task.checked" ng-change="toggleChecked(task)" />
                 <span></span>
                 <h3 ng-bind="task.title" class="fw-bold m-0"></h3>
                 <p class="date m-0" ng-bind="task.dateStr"></p>
@@ -56,7 +58,7 @@
             </button>
         </article>
 
-        <p ng-show="!tasks.length" class="empty">Nenhuma tarefa cadastrada...</p>
+        <p ng-show="filteredTasks().length === 0" class="empty">Nenhuma tarefa cadastrada...</p>
     </main>
 
     <aside ng-if="modalActive" class="modal-container">
@@ -86,12 +88,12 @@
     </aside>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
+        </script>
 
     <script src="./assets/js/main.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-        crossorigin="anonymous"></script>
 
 </body>
 
