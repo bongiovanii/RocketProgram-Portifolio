@@ -57,16 +57,16 @@
         </div>
 
         <div class="row d-flex justify-content-center align-items-center m-auto w-50 ">
-            <form class="cadastrarUser"  ng-submit="handleSubmitAddUser()">
+            <form name="form" class="cadastrarUser"  ng-submit="handleSubmitAddUser()">
                 <h3>Adicionar Novo Usuario</h3>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Nome</label>
-                    <input type="text" class="form-control" id="nome" ng-model="userInput.nome" required>
+                    <input type="text" class="form-control" id="nome" ng-model="userInput.nome" ng-required="true">
 
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Tipo de Conta</label>
-                    <select class="form-control" ng-model="userInput.tipo" required>
+                    <select class="form-control" ng-model="userInput.tipo" ng-required="true">
                         <option value="">Selecione...</option>
                         <option value="Aluno">Aluno</option>
                         <option value="Professor">Professor</option>

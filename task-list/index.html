@@ -71,14 +71,15 @@
                 </span>
             </button>
             <h2 class="fw-bold fs-4 m-0">Adicionar uma tarefa</h2>
-            <form ng-submit="handleSubmitAddTask()">
+            
+            <form name="form" ng-submit="handleSubmitAddTask()">
                 <label>
                     <p class="m-0 fs-6">Nome</p>
-                    <input class="fs-6" type="text" placeholder="Nome da tarefa" ng-model="taskInput.title" />
+                    <input name="input" class="fs-6" type="text" placeholder="Nome da tarefa" ng-model="taskInput.title" ng-required="true"/>
                 </label>
                 <label>
                     <p class="m-0 fs-6">Data</p>
-                    <input class="fs-6" type="date" ng-model="taskInput.date" />
+                    <input name="input" class="fs-6" type="date" ng-model="taskInput.date" ng-required="true"/>
                 </label>
                 <button type="submit">
                     <p class="fw-bolder fs-4 m-0">Salvar</p>

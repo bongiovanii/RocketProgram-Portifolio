@@ -66,5 +66,5 @@ app.controller("TaskController", function ($scope, $filter, TaskService) {
         $scope.tasks = TaskService.getTasks();
     };
 
-
+ 
 });
