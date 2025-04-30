@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app="userModule" lang="pt-br" data-bs-theme="dark">
+<html ng-app="userModule" lang="pt-br" >
 
 <head>
     <meta charset="utf-8">
@@ -15,19 +15,25 @@
     <script src="./assets/js/user.controller.js"></script>
 </head>
 
-<body class=" vh-100"  ng-controller="AppController">
+<body class=" vh-100"  ng-controller="AppController" data-bs-theme="{{theme}}">
     <header>
         <nav class="d-flex justify-content-center align-items-center m-auto bg-dark-subtle  w-100">
             <div class="container-fluid">
-                <h1>Filtrar por</h1>
-            </div>
+                <a class="navbar-brand" href="#">
+                  <img src="./assets/images/graduacao.png" alt="Logo" width="44" height="44" class="d-inline-block align-text-center">
+                   <h1 class="h3">Manager School</h1>
+                  
+                </a>
+              </div>
+            
             <div class="filtros container-fluid text-end">
+                <span class="me-2">Filtrar por</span>
                 <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
                     <input type="checkbox" class="btn-check" id="btnradio1" ng-model="filtros.aluno">
-                    <label class="btn btn-outline-primary" for="btnradio1">Aluno</label>
+                    <label class="btn btn-outline-primary btn-sm" for="btnradio1">Aluno</label>
 
                     <input type="checkbox" class="btn-check" id="btnradio2" ng-model="filtros.professor">
-                    <label class="btn btn-outline-primary" for="btnradio2">Professor</label>
+                    <label class="btn btn-outline-primary btn-sm" for="btnradio2">Professor</label>
                 </div>
             </div>
         </nav>
@@ -57,7 +63,7 @@
         </div>
 
         <div class="row container p-5 form-container">
-            <form name="form" ng-submit="handleSubmitAddUser(form)">
+            <form name="form" class="bg-{{theme}}" ng-submit="handleSubmitAddUser(form)">
                 <h3>Adicionar Novo Usuario</h3>
 
                 <div class="mb-3">
@@ -99,6 +105,13 @@
                 </button>
 
             </form>
+        </div>
+
+        <div>
+            <button class="theme-switcher " ng-click="switchTheme()">
+                <img ng-show="theme === 'dark'" src="./assets/images/light_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.png" alt="Light">
+                <img ng-show="theme === 'light'" src="./assets/images/dark_mode_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.png" alt="Dark">
+            </button>
         </div>
 
     

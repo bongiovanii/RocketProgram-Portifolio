@@ -1,3 +1,9 @@
+:root{
+    --dark-color: rgb(34, 38, 43);
+    --darker-color: rgb(24, 28, 34);
+    --base-variant: rgb(241, 241, 241);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +17,7 @@ nav {
 
 
 form{
-    background-color: rgb(34, 38, 43);
+    background-color: var(--dark-color);
     padding: 20px;
     border-radius: 10px;
     box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
@@ -27,6 +33,31 @@ form{
 }
 
 
+.filtro{
+    width: 24px;
+    margin-right: 5px;
+}
+
+.logo{
+    width: 60px;
+}
+
+.theme-switcher{
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border: none;
+    background-color: var(--darker-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:0 6px 10px 0 rgba(0, 0, 0, 0.19) ;
+}
+
+.theme-switcher img:last-child{
+    display: none;
+}
 
 
 p {

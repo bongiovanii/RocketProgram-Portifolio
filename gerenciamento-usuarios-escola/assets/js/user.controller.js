@@ -1,6 +1,16 @@
 app.controller('AppController', function ($scope, UsuarioService) {
     $scope.mensagem = "Bem-Vindo ao sistema de cadastro Escolar";
 
+    const changeTheme = false;
+
+    $scope.theme = "dark";
+
+    $scope.switchTheme = function () {
+        $scope.theme = ($scope.theme === 'dark') ? 'light' : 'dark';
+
+        document.body.className = $scope.theme + '-theme';
+    };
+
     $scope.filtros = {
         aluno: false,
         professor: false
@@ -9,8 +19,7 @@ app.controller('AppController', function ($scope, UsuarioService) {
 
     $scope.usuarios = UsuarioService.listar();
 
-    // #1 bug: os sitema não consegue pegar os dados dos Inputs => 
-    // {nome: "", tipo: "", dataCadastro: "Invalid Date"}
+
 
     $scope.userInput = {
         nome: "",
