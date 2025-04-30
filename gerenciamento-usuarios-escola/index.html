@@ -15,7 +15,7 @@
     <script src="./assets/js/user.controller.js"></script>
 </head>
 
-<body class="d-flex justify-content-center align-items-center vh-100"  ng-controller="AppController">
+<body class=" vh-100"  ng-controller="AppController">
     <header>
         <nav class="d-flex justify-content-center align-items-center m-auto bg-dark-subtle  w-100">
             <div class="container-fluid">
@@ -56,29 +56,52 @@
             </div>
         </div>
 
-        <div class="row d-flex justify-content-center align-items-center m-auto w-50 ">
-            <form name="form" class="cadastrarUser"  ng-submit="handleSubmitAddUser()">
+        <div class="row container p-5 form-container">
+            <form name="form" ng-submit="handleSubmitAddUser(form)">
                 <h3>Adicionar Novo Usuario</h3>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Nome</label>
-                    <input type="text" class="form-control" id="nome" ng-model="userInput.nome" ng-required="true">
 
+                <div class="mb-3">
+                    <label for="exampleInput" class="form-label">Nome</label>
+
+                    <input type="text" class="form-control" id="nome" name="inputValidationNome" ng-model="userInput.nome" required>
+
+                    <div class="error-message alert alert-warning align-items-center mt-3" ng-show="form.inputValidationNome.$touched && form.inputValidationNome.$error.required">⚠️ O campo Nome deve ser preenchido!</div>
                 </div>
+
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+
+                    <input type="email" class="form-control" id="email"  name="inputValidationEmail" ng-model="userInput.email" required>
+
+                    <div class="error-message alert alert-warning align-items-center mt-3" ng-show="form.inputValidationEmail.$touched && form.inputValidationEmail.$error.required">⚠️ O campo Email deve ser preenchido!</div>
+                </div>
+
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Tipo de Conta</label>
-                    <select class="form-control" ng-model="userInput.tipo" ng-required="true">
+
+                    <select class="form-control" ng-model="userInput.tipo" name="inputValidationTipo" required>
                         <option value="">Selecione...</option>
                         <option value="Aluno">Aluno</option>
                         <option value="Professor">Professor</option>
                     </select>
+
+                    <div class="error-message alert alert-warning align-items-center mt-3" ng-show="form.inputValidationTipo.$touched && form.inputValidationTipo.$error.required">⚠️ O campo Tipo de Conta deve ser preenchido!</div>
                 </div>
                 <div class="mb-3 ">
                     <label>Data de Cadastro </label> <br>
-                    <input type="date" ng-model="userInput.date" required>
+
+                    <input type="date" ng-model="userInput.date" name="inputValidationData" required>
+
+                    <div class="error-message alert alert-warning align-items-center mt-3" ng-show="form.inputValidationData.$touched && form.inputValidationData.$error.required">⚠️ O campo Data de Cadastro deve ser preenchido!</div>
                 </div>
-                <button type="submit" class="btn btn-primary" >Submit</button>
+                <button type="submit" class="btn btn-primary" ng-disabled="loading" >
+                    {{loading ? "Enviando..." : "Enviar"}}
+                </button>
+
             </form>
         </div>
+
+    
     </main>
 
     <footer>

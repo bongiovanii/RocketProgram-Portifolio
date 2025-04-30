@@ -6,24 +6,37 @@
 
 nav {
     width: 100%;
-    padding: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+
 }
 
-footer{
-    position: fixed;
-    top: 100;
-    bottom: 0;
-    left: 0;
-    right: 0;
+
+form{
+    background-color: rgb(34, 38, 43);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
 }
+
+@media (min-width: 768px) { 
+    .form-container{
+        display: flex;
+        justify-content: center !important;
+        margin:auto !important;
+        max-width: 500px !important;
+    }
+}
+
+
+
 
 p {
     margin: 0;
     padding: 0;
+}
+
+input.ng-invalid.ng-touched{
+    border-color: red;
+    
 }
 
 
