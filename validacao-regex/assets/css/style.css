@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #e0e0e0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#registrationForm {
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+    border-radius: 40px;
+    background: #e0e0e0;
+    box-shadow: 20px 20px 47px #bebebe,
+               -20px -20px 47px #ffffff;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 500;
+}
+
+.form-control {
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: inset 8px 8px 15px #d9d9d9,
+               inset -8px -8px 15px #e7e7e7;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    box-shadow: inset 5px 5px 10px #d9d9d9,
+               inset -5px -5px 10px #e7e7e7;
+}
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: 8px 8px 15px #c3c3c3,
+               -8px -8px 15px #fdfdfd;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    box-shadow: 5px 5px 10px #c3c3c3,
+               -5px -5px 10px #fdfdfd;
+}
+
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* Estilos para validação */
+.error-message {
+    display: block;
+    margin-top: -15px;
+    margin-bottom: 15px;
+    font-size: 0.8rem;
+    color: #ff4444;
+    padding-left: 20px;
+}
+
+.is-valid {
+    box-shadow: inset 8px 8px 15px #d9f7d9,
+               inset -8px -8px 15px #e7ffe7;
+}
+
+.is-invalid {
+    box-shadow: inset 8px 8px 15px #ffd9d9,
+               inset -8px -8px 15px #ffe7e7;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    #registrationForm {
+        padding: 30px 20px;
+        border-radius: 30px;
+    }
+    
+    .form-control {
+        padding: 12px 15px;
+    }
+}
